@@ -48,7 +48,7 @@
         android:label="fragment_common"
         tools:layout="@layout/fragment_common">
         <action
-            android:id="@+id/action_commonFragment_title"
+            android:id="@+id/action_commonFragment_to_begin"
             app:destination="@id/titleScreen" />
     </fragment>
 </navigation>

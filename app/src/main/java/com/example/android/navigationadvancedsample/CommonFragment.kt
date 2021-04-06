@@ -26,7 +26,7 @@ class CommonFragment : Fragment() {
 
         view.findViewById<TextView>(R.id.tag_tv).setOnClickListener {
             findNavController(this).navigate(
-                    R.id.action_commonFragment_title, //R.id.titleScreen,
+                    R.id.action_commonFragment_to_begin, //R.id.titleScreen,
                     bundleOf("TEST" to System.currentTimeMillis())
             )
         }

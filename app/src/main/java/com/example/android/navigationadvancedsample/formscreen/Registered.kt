@@ -22,6 +22,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.android.navigationadvancedsample.CommonFragment
 import com.example.android.navigationadvancedsample.R
 
@@ -45,6 +46,10 @@ class Registered : Fragment() {
                     "Register fragment",
                     R.id.action_registered_to_commonFragment
             )
+        }
+
+        view.findViewById<TextView>(R.id.done_back_tv).setOnClickListener {
+            findNavController().navigate(R.id.action_registered_to_register)
         }
     }
 }

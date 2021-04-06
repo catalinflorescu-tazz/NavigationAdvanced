@@ -40,11 +40,19 @@
         <action
             android:id="@+id/action_registered_to_commonFragment"
             app:destination="@id/commonFragment" />
+
+        <action
+            android:id="@+id/action_registered_to_register"
+            app:destination="@id/register" />
     </fragment>
 
     <fragment
         android:id="@+id/commonFragment"
         android:name="com.example.android.navigationadvancedsample.CommonFragment"
         android:label="fragment_common"
-        tools:layout="@layout/fragment_common" />
+        tools:layout="@layout/fragment_common">
+        <action
+            android:id="@+id/action_commonFragment_to_begin"
+            app:destination="@id/register" />
+    </fragment>
 </navigation>
